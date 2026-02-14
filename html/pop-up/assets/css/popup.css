@@ -1,13 +1,23 @@
+/* Center the modal vertically and horizontally */
+#popup-promo.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 #popup-dialog {
   max-width: 60%;
-  margin: auto;
+  margin: 0 auto;
 }
+
 #popup-title {
   font-size: clamp(15px, 1.5vw, 24px);
 }
+
 #close-popup {
   font-size: clamp(15px, 1.5vw, 24px);
 }
+
 .modal-body {
   margin: auto;
 }
@@ -15,8 +25,9 @@
 @media (max-width: 999px) {
   #popup-dialog {
     max-width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
   }
+
   #promo-img {
     content: url("../img/mobile.png");
   }
